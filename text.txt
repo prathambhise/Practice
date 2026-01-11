@@ -1,0 +1,5 @@
+g++ demo.cpp -o hello.exe
+hello.exe
+hello
+
+g++ -o main.exe main.cpp includes/calculations.cpp     
