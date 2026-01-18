@@ -5,7 +5,7 @@
 void print();
 int add(int, int);
 int add(int, int, int);
-void div(float, float = 2);
+void my_div(float, float = 2.0);
 
 int main() {
 
@@ -14,9 +14,9 @@ int main() {
     print();
     add(5, 7);
     add(5, 7, 3);
-    div(5);
-    div(10, 3);
-    div(3);
+    my_div(5.0);
+    my_div(10.0, 3.0);
+    my_div(3.0);
 
     return 0;
 }
@@ -39,7 +39,7 @@ int add(int x, int y, int z) {
     return x + y + z;
 }
 
-void div(float p, float q) {
+void my_div(float p, float q) {
     std::cout << "div: ";
     std::cout << p / q << std::endl;
 }
